@@ -81,7 +81,7 @@ h3 {
 }
 
 .brand-logo {
-  height: 192px;
+  height: 96px;
   width: auto;
   display: block;
 }
@@ -439,6 +439,20 @@ textarea:focus {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .brand-logo {
+    height: 72px;
+    max-width: 78vw;
+    width: auto;
+  }
+
+  .nav-links {
+    width: 100%;
   }
 
   .trip-grid,
