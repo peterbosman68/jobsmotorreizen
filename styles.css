@@ -160,7 +160,15 @@ h3 {
 }
 
 .reizen-photo {
-  object-position: center 54%;
+  height: 460px;
+  object-position: center 38%;
+}
+
+@media (min-width: 661px) {
+  .reizen-photo {
+    height: 460px;
+    object-position: center 40%;
+  }
 }
 
 .trip-grid {
@@ -442,6 +450,11 @@ textarea:focus {
 
   .section-photo {
     height: 300px;
+  }
+
+  .reizen-photo {
+    height: 340px;
+    object-position: center 34%;
   }
 
   .quote-card-photo {
