@@ -76,9 +76,14 @@ h3 {
 
 .brand {
   text-decoration: none;
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 192px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -93,7 +98,7 @@ h3 {
 }
 
 .hero-content {
-  padding: 5rem 0 8rem;
+  padding: 0 0 8rem;
   max-width: 760px;
 }
 
