@@ -72,21 +72,13 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 0;
-  margin-top: -240px;
 }
 
 .brand {
   text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-.brand-logo {
-  height: 768px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
+  color: var(--sunset);
+  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 .nav-links {
@@ -101,8 +93,7 @@ h3 {
 }
 
 .hero-content {
-  padding: 1.5rem 0 8rem;
-  margin-top: -288px;
+  padding: 5rem 0 8rem;
   max-width: 760px;
 }
 
@@ -440,29 +431,9 @@ textarea:focus {
 
 @media (max-width: 660px) {
   .nav {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0.25rem 0;
-    margin-top: 0;
-  }
-
-  .brand {
-    width: auto;
-  }
-
-  .brand-logo {
-    height: 104px;
-    width: auto;
-    max-width: none;
-  }
-
-  .nav-links {
-    width: auto;
-    gap: 0.9rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
 
   .trip-grid,
@@ -471,8 +442,7 @@ textarea:focus {
   }
 
   .hero-content {
-    padding-top: 0.25rem;
-    margin-top: 144px;
+    padding-top: 3.5rem;
   }
 
   .section-photo,
