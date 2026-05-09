@@ -439,8 +439,12 @@ textarea:focus {
 @media (max-width: 660px) {
   .nav {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .nav-links {
+    justify-content: center;
   }
 
   .brand-logo {
@@ -453,7 +457,8 @@ textarea:focus {
   }
 
   .hero-content {
-    padding-top: 3.5rem;
+    margin-top: 0;
+    padding-top: 2rem;
   }
 
   .section-photo,
@@ -472,5 +477,100 @@ textarea:focus {
   .quote-card-photo {
     min-height: 260px;
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  #over-job {
+    overflow: hidden;
+  }
+
+  #over-job .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    align-items: stretch;
+  }
+
+  #over-job .about-grid > div {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #over-job .about-grid > div:first-child {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  #over-job .about-grid .section-kicker,
+  #over-job .about-grid h2,
+  #over-job .about-grid p {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  #over-job .about-grid .section-kicker {
+    margin: 0 0 0.7rem;
+  }
+
+  #over-job .about-grid h2 {
+    margin: 0 0 1rem;
+    line-height: 1.15;
+  }
+
+  #over-job .about-grid p {
+    margin: 0 0 1rem;
+    line-height: 1.6;
+  }
+
+  #over-job .about-grid p:last-child {
+    margin-bottom: 0;
+  }
+
+  #over-job .about-grid h2,
+  #over-job .about-grid p,
+  #over-job .about-grid span {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  #over-job .quote-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: clamp(260px, 72vw, 420px);
+    padding: 1.1rem;
+    overflow: hidden;
+  }
+
+  #over-job .quote-card-photo {
+    position: relative;
+    background:
+      linear-gradient(to top, rgba(8, 20, 34, 0.78) 0%, rgba(8, 20, 34, 0.42) 36%, rgba(8, 20, 34, 0.18) 62%, rgba(8, 20, 34, 0.1) 100%),
+      url("Images/1000087750.jpg?v=20260508-3") center center/cover;
+    aspect-ratio: 10 / 16;
+    min-height: clamp(360px, 96vw, 620px);
+    max-height: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  #over-job .quote-card-photo p {
+    font-size: clamp(1rem, 4.4vw, 1.2rem);
+    line-height: 1.45;
+    margin: 0 0 0.45rem;
+    max-width: 100%;
+  }
+
+  #over-job .quote-card-photo span {
+    font-size: 0.95rem;
+    max-width: 100%;
   }
 }
